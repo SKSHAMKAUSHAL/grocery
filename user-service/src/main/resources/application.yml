@@ -1,0 +1,30 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:postgresql://user-db:5432/userdb
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://securetoken.google.com/grocery-ordering-new
+firebase:
+  service-account:
+    path: classpath:firebase-service-account.json
+  api-key: AIzaSyCim0B11Wlc2viDIazMGJlNmAuVpINTqX0
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+logging:
+  level:
+    com.google.firebase: DEBUG
+

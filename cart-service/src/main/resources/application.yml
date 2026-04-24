@@ -1,0 +1,18 @@
+server:
+  port: 8083
+spring:
+  datasource:
+    url: jdbc:postgresql://cart-db:5432/cartdb
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html

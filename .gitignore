@@ -1,0 +1,9 @@
+
+# Ignore Firebase credentials
+**/firebase-service-account.json
+**/firebase-service-account.txt
+
+# Ignore Maven build output
+target/
+*/target/
+
